@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bio Data</title>
+</head>
+<body>
+    <h1>My Bio Data</h1>
+    <fieldset>
+        <legend><b>Personal Information</b></legend>
+        <label for="FirstName">First Name:</label>
+        <input type="text" name="FirstName" placeholder="Enter Your First Name">
+        <label for="LastName">Last Name:</label>
+        <input type="text" name="LastName" placeholder="Enter Your Last Name">
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other">
+        <label for="other">Other</label>
+        <br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter Your Email">
+        <br><br>
+        <label for="pn">Phone Number:</label>
+        <input type="tel" name="pn" placeholder="+91">
+        <br><br>
+        <label for="height">Height:</label>
+        <input type="number" name="height" placeholder="Height in feet">
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><b>Education</b></legend>
+        <label for="Sn">School Name:</label>
+        <input type="text" name="Sn" placeholder="School Name">
+        <br><br>
+        <label for="c">Class:</label>
+        <input type="text" name="c" placeholder="Enter Class">
+        <br><br>
+        <label for="stream">Stream:</label>
+        <select name="stream">
+            <option>Stream</option>
+            <option>CS</option>
+            <option>IT</option>
+            <option>ME</option>
+        </select>
+        <br><br>
+        <label>Marksheet:</label>
+        <input type="file" accept=".pdf">
+    </fieldset>
+    <br><br>
+    <button id="button" type="button">Submit</button>
+</body>
+</html>
