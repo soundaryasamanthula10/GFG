@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #7a7ae6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+hr {
+    width: 50vw;
+    height: 5px;
+    background-color: #043874;
+    margin: 20px auto;
+    border: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 55px;
+    position: absolute;
+    width: 100%;
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    margin-right: 1rem;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+header h2 {
+    
+    font-weight: 600;
+    color: #100f0f;
+    
+}
+
+#hero {
+    background: url("./images/hero-image.jpg") center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: -1;
+}
+
+
+#hero-content h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 4px #000;
+}
+
+#banner-content h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+#trips {
+    padding: 6rem;
+    
+    text-align: center;
+}
+
+#trips h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #0f2d44;
+    text-align: center;
+}
+
+#images{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#images .small,
+.large {
+    padding: 1rem;
+    height: 350px;
+}
+
+#images .small {
+    flex-basis: 30%;
+}
+
+#images .large {
+    flex-basis: 70%;
+}
+
+#images div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#info {
+    padding: 2rem 10rem;
+    background-color: var(--section-bgcolor);
+    text-align: center;
+}
+
+#info h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #0f2d44;
+    text-align: center;
+}
+
+#info p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #022d4d;
+}
+
+#info-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.details {
+    padding: 1rem 2rem;
+    height: 350px;
+    flex-basis: 50%;
+}
+
+.details p {
+    font-size: 1.2rem !important;
+}
+
+.details h4 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #0c3751;
+    margin: 1rem;
+}
+
+.icon {
+    color: rgba(6, 32, 63, 0.792);
+}
+#sign-up {
+    padding: 2rem 15rem;
+    background-color: #61d1e5;
+    text-align: center;
+}
+
+#sign-up h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#sign-up p {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    
+}
+
+#sign-up input {
+    font-size: 1.2rem;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 1rem;
+    height: 40px;
+}
+
+#sign-up input:focus {
+    border: 2px
+}
+
+footer {
+    text-transform: uppercase;
+    background-color: #0f2d44;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem 0rem 1rem;
+    color: #ffffff;
+}
+
+footer i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #ffffff;
+    cursor: pointer;
+}
